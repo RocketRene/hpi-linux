@@ -23,6 +23,9 @@ modules:
     install:
       - micro
       - starship
+      - helix
+      - gnome-tweaks
+      - golang
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -40,16 +43,18 @@ modules:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
 
+  - type: brew
+  
   - type: chezmoi
     repository: "https://github.com/rocketrene/dotfiles" # my dotfiles repo
     all-users: true # make users have to enable chezmoi manually
     file-conflict-policy: replace # override changed files with those from the repo
-
-  - type: brew
-    packages:
-      - lazygit
-      - golang
-      - helix
+    
+  - type: gnome-extensions
+    install:
+      - Night Theme Switcher
+      - Blur my Shell # Notice how extension is named "Blur my Shell" & not "Blur My Shell"?
+    # uninstall:
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
