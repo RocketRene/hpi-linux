@@ -27,6 +27,12 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
       - ShellCheck
+      - qemu-kvm
+      - libvirt
+      - virt-manager
+      - virt-install
+      - gnome-boxes
+      - virt-viewer
       - atuin
       - btop
       - cargo
