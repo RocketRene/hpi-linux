@@ -21,7 +21,6 @@ modules:
       copr:
       - dejan/lazygit
       - pgdev/ghostty
-      - lecris/atuin
 
   - type: rpm-ostree
     repos:
@@ -29,7 +28,6 @@ modules:
     install:
       - lazygit
       - ghostty
-      - atuin
       - micro
       - btop
       - gcc
@@ -100,5 +98,6 @@ modules:
     snippets:
       - "curl -LsSf https://astral.sh/uv/install.sh | sh"
       - "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y"
+      - "curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh"
     scripts:
       - install-language-servers.sh
