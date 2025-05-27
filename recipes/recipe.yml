@@ -30,7 +30,7 @@ modules:
       - atuin
       - btop
       - cargo
-      - exa
+      - eza
       - chromium
       - clangd
       - code
