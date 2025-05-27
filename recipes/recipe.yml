@@ -16,12 +16,22 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  - type: dnf
+    repos: 
+      copr:
+      - dejan/lazygit
+      - pgdev/ghostty
+      - lecris/atuin
 
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
+      - lazygit
+      - ghostty
+      - atuin
       - micro
+      - btop
       - starship
       - helix
       - gnome-tweaks
@@ -39,7 +49,9 @@ modules:
       - gedit
       - https://zoom.us/client/latest/zoom_x86_64.rpm 
       - zsh
-      
+      - zsh-syntax-highlighting
+      - zsh-autosuggestions  
+      - zoxide
       
     remove:
       # example: removing firefox (in favor of the flatpak)
