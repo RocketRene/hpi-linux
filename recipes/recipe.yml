@@ -42,7 +42,6 @@ modules:
       - gnome-tweaks
       - golang
       - helix 
-      - https://zoom.us/client/latest/zoom_x86_64.rpm 
       - lazygit
       - libreoffice
       - libreoffice-langpack-de
@@ -60,6 +59,7 @@ modules:
       - zsh
       - zsh-autosuggestions  
       - zsh-syntax-highlighting
+      - xwaylandvideobridge
       
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -103,3 +103,4 @@ modules:
       - "cargo install eza"
     scripts:
       - install-language-servers.sh
+      - install-zoom.sh
