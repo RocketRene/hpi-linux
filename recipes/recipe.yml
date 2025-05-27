@@ -27,7 +27,20 @@ modules:
       - gnome-tweaks
       - golang
       - gh 
+      - gnome-extensions-app 
+      - libreoffice
+      - libreoffice-langpack-de
+      - chromium
+      - libreoffice-langpack-en 
       - code
+      - mpv
+      - evince
+      - papers
+      - gedit
+      - https://zoom.us/client/latest/zoom_x86_64.rpm 
+      - zsh
+      
+      
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -40,7 +53,12 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - org.mozilla.firefox
+        - org.mozilla.Thunderbird
         - org.gnome.Loupe
+        - org.telegram.desktop
+        - com.rtosta.zapzap #WhatsApp
+        - md.obsidian.Obsidian
+        - it.mijorus.gearlever
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
