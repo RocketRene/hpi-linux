@@ -30,7 +30,6 @@ modules:
       - atuin
       - btop
       - cargo
-      - eza
       - chromium
       - clangd
       - code
@@ -100,5 +99,7 @@ modules:
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
   - type: script
+    snippets:
+      - "cargo install eza"
     scripts:
       - install-language-servers.sh
