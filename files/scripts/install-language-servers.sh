@@ -5,7 +5,8 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-
+source ~/.cargo/env 2>/dev/null || true
+export PATH="$HOME/.local/bin:$PATH"
 
 sudo npm i -g bash-language-server
 sudo npm install -g dockerfile-language-server-nodejs
