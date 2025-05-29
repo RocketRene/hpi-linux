@@ -6,8 +6,8 @@ name: hpi-linux
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 42 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/bluefin-dx
+image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -68,11 +68,11 @@ modules:
       - zsh-syntax-highlighting
       - xwaylandvideobridge
       
-    remove:
+    # remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
-      - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      # - firefox
+      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
