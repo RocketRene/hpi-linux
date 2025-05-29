@@ -109,6 +109,5 @@ modules:
     snippets:
       - "cargo install eza"
     scripts:
-      - install-language-servers.sh
       - cloudflare-nameserver.sh
       - install-zoom.sh
