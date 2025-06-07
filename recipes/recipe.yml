@@ -86,6 +86,9 @@ modules:
         - com.rtosta.zapzap #WhatsApp
         - md.obsidian.Obsidian
         - it.mijorus.gearlever
+        - org.wezfurlong.wezterm
+        - com.raggesilver.BlackBox
+
       remove:
         - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
@@ -106,8 +109,5 @@ modules:
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
   - type: script
-    snippets:
-      - "cargo install eza"
     scripts:
-      - cloudflare-nameserver.sh
       - install-zoom.sh
