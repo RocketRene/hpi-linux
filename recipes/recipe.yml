@@ -30,7 +30,7 @@ modules:
   install:
   - pipewire
   - wireplumber
-  - pipewire-pulse
+  - pipewire-pulseaudio
   - pipewire-alsa
   - nwg-displays
   - fd-find
