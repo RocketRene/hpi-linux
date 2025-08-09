@@ -21,7 +21,7 @@ modules:
     copr:
     - dejan/lazygit
     - pgdev/ghostty
-    - markupstart/nwg-shell
+    - tofik/nwg-shell
 
 - type: rpm-ostree
   repos:
