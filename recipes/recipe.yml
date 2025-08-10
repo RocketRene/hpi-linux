@@ -22,6 +22,7 @@ modules:
     - dejan/lazygit
     - pgdev/ghostty
     - tofik/nwg-shell
+    - wezfurlong/wezterm-nightly
 
 - type: rpm-ostree
   repos:
@@ -85,6 +86,7 @@ modules:
   - gstreamer1-vaapi
   - ffmpeg
   - x265
+  - wezterm
   # remove:
   # example: removing firefox (in favor of the flatpak)
   # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -103,7 +105,6 @@ modules:
     - com.rtosta.zapzap
     - md.obsidian.Obsidian
     - it.mijorus.gearlever
-    - org.wezfurlong.wezterm
     - com.raggesilver.BlackBox
 
 - type: brew
